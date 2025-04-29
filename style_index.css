@@ -73,8 +73,9 @@ body {
   }
   
   .card-img {
-    border-radius: 50%;
+    border-radius: 10%;
     margin: 0 auto 1rem;
+    height: 75%;
   }
   
   .card h3 {
@@ -122,7 +123,40 @@ body {
   .categoria p {
     color: #B0B0B0;
   }
+
+  /* Parceiros */
+
+  .categoria-parceiro {
+    background-color: #1C1C1C;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
   
+  .categoria-parceiro:hover {
+    transform: scale(1.05);
+  }
+  
+  .categoria-parceiro h3 {
+    color: #D32F2F;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .parceiro {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+  }
+
   /* Footer */
   .footer {
     background-color: #1C1C1C;
