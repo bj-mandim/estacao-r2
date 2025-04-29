@@ -13,46 +13,16 @@
   </nav>
 
   <section class="products">
-    <div class="products__grid">
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Carregador Portátil" class="product__image">
-        <h2 class="product__title">Carregador Portátil</h2>
-        <p class="product__description">Mais autonomia para sua E-bike.</p>
-        <a href="#" class="product__link">Ver Produto</a>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Suporte Celular" class="product__image">
-        <h2 class="product__title">Suporte de Celular para Guidão</h2>
-        <p class="product__description">Use GPS ou música enquanto pedala.</p>
-        <a href="#" class="product__link">Ver Produto</a>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Retrovisor Bike" class="product__image">
-        <h2 class="product__title">Retrovisor de Alta Visibilidade</h2>
-        <p class="product__description">Mais segurança nas vias urbanas.</p>
-        <a href="#" class="product__link">Ver Produto</a>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Farol LED" class="product__image">
-        <h2 class="product__title">Farol LED Recarregável</h2>
-        <p class="product__description">Iluminação potente para noite.</p>
-        <a href="#" class="product__link">Ver Produto</a>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Bateria Extra" class="product__image">
-        <h2 class="product__title">Bateria Extra 36V</h2>
-        <p class="product__description">Dobre sua autonomia.</p>
-        <a href="#" class="product__link">Ver Produto</a>
-      </div>
-    </div>
+    <div id="productsGrid" class="products__grid"></div>
   </section>
 
   <footer class="footer">
     <p>© 2025 Estação 2R</p>
   </footer>
+  <script type="module">
+    import renderizarProdutos from './scrypt.js';
+    import produtos from './data.js';
+    renderizarProdutos(produtos);
+  </script>
 </body>
 </html>

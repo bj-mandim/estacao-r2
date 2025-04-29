@@ -13,32 +13,16 @@
   </nav>
 
   <section class="products">
-    <div class="products__grid">
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Bolsa Impermeável" class="product__image">
-        <h2 class="product__title">Bolsa de Quadro Impermeável</h2>
-        <p class="product__description">Ideal para trilhas longas.</p>
-        <a href="#" class="product__link">Ver Produto</a>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Kit de Ferramentas" class="product__image">
-        <h2 class="product__title">Kit de Ferramentas Portátil</h2>
-        <p class="product__description">Reparos rápidos na estrada.</p>
-        <a href="#" class="product__link">Ver Produto</a>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Cadeado de Segurança" class="product__image">
-        <h2 class="product__title">Cadeado de Alta Segurança</h2>
-        <p class="product__description">Proteja sua bike com tranquilidade.</p>
-        <a href="#" class="product__link">Ver Produto</a>
-      </div>
-    </div>
+    <div id="productsGrid" class="products__grid"></div>
   </section>
 
   <footer class="footer">
     <p>© 2025 Estação 2R</p>
   </footer>
+  <script type="module">
+    import renderizarProdutos from './scrypt.js';
+    import produtos from './data.js';
+    renderizarProdutos(produtos);
+  </script>
 </body>
 </html>
